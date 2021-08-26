@@ -16,9 +16,19 @@
     <!-- para exemplo, apenas dessa vez utilizaremos o script nesta página e não o externo, por causa do babel-->
     <script type="text/babel">
     
+       
+        function Exemplo234(){
+            var nomeExemplo = 'Chris'
+            var sobrenomeExemplo = 'Maracuja'
+            return(
+                <div>
+                    <p>Meu nome no github é {nomeExemplo} {sobrenomeExemplo}</p>
+                </div>    
+
+            )
+        }
         const exemploLocal = document.getElementById('exemplo1');
-        let testeNome = 'João Pedro Marcelo'
-        ReactDOM.render(<h1>Testando {testeNome}</h1>,exemploLocal)
+        ReactDOM.render(<Exemplo234 />,exemploLocal)
 
     </script>
 </body>
