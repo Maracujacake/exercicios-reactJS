@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="exemplo" id="exemplo"></div>
+    <div class="exemplo" id="exemplo1"></div>
 
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+   <!-- <script src="index.js"></script> -->
+    <!-- para exemplo, apenas dessa vez utilizaremos o script nesta página e não o externo, por causa do babel-->
+    <script type="text/babel">
+    
+        const exemploLocal = document.getElementById('exemplo1');
+        let testeNome = 'João Pedro Marcelo'
+        ReactDOM.render(<h1>Testando {testeNome}</h1>,exemploLocal)
+
+    </script>
 </body>
 </html>
